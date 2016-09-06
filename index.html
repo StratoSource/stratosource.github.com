@@ -5,64 +5,40 @@
 
   <title>StratoSource @ GitHub</title>
 
-  <style type="text/css">
-    body {
-      margin: 0;
-      background-color: #DDDDEE;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: black;
-    }
-    #container {
-      margin: 15px;
-      width: auto;
-      padding: 2px 15px;
-      background-color: white;
-    }
-    h1, h2, h2, h3 {
-      margin-top: 0px;
-      padding-top: 0px;
-    }
-    h1 {
-        font-size: 2.5em;
-        color: #FFCC44;
-        margin-bottom: 3px;
-        text-shadow: 0.1em 0.1em 0.2em black;
-        font-weight: normal;
-        padding: 10px;
-        background: url("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/dot-luv/images/ui-bg_diagonals-thick_15_0b3e6f_40x40.png") repeat scroll 50% 50% #5C9CCC;
-    }
-    h1 .small { font-size: 0.4em; }
-    h2 { font-size: 1.5em; color: #FFB900; text-shadow: 0.1em 0.1em 0.1em #555555;}
-    h3 { text-align: center; color: #FFB900; text-shadow: 0.1em 0.1em 0.1em #555555;}
-    a { color: #CC9200; }
-    a:hover { color: black; }
-    .description { font-size: 1.2em; margin: 20px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px; width: 50%;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <div>
+  <div class="container">
     <h1>Strato<strong><i>Source</i></strong></h1>
-  </div>
   <div class="description">
-    <a href="http://www.force.com">Force.com®</a>&nbsp;&nbsp;backup, source & release management
+    <a href="http://www.force.com">Salesforce.com®</a>&nbsp;&nbsp;backup, source & release management
   </div>
-  <div id="container">
     <p>
       <div style="padding:20px; border:15px; float:right;"><img src="https://github.com/StratoSource/StratoSource/wiki/images/stratosaurus_small.png"/></div>
       <div>The Strato<b><i>Source</i></b> Core features include:</div>
       <ul>
-        <li>Downloading environment META-data and source into a GIT repository</li>
-        <li>Analyzing changes intelligently</li>
-        <li>Allowing Developers and Administrators to track changes and associate them with development stories</li>
+        <li> Track code and configuration changes to a sandbox or production.</li>
+        <li> Optionally integrate with [Rally](https://www.rallydev.com) or [AgileZen](http://www.agilezen.com) for story population.</li>
+        <li> Tag changes to stories, and stories to releases.</li>
+        <li> Use the Release Manifest to view all tagged changes for a release.</li>
+        <li> Detects when the same config or code item changes across two pending releases and issues warning.</li>
+        <li> Releases include list of tasks to be performed manually during a package push.</li>
+        <li> Changes are tracked in a git repository.</li>
+        <li> Includes integrated cgit to provide git-level change inspection from the browser.</li>
+        <li> Export changed/added custom labels to spreadsheet to send to translation vendors.</li>
+        <li> and more...</li>
         <li>Full details on <a href="https://github.com/StratoSource/StratoSource/wiki">the project wiki</a><br/></li>
       </ul>
     </p>
-    <h2>You Can...</h2>
       <ul>
         <li>File issues, browse the code, contact us at <a href="http://github.com/StratoSource/StratoSource">github.com/StratoSource/StratoSource</a><br/></li>
         <li>Get the latest built version <a href="https://github.com/StratoSource/StratoSource/tree/master/latest">RPM here</a><br/></li>
@@ -71,11 +47,7 @@
         </li>
       </ul>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/StratoSource/StratoSource">StratoSource/StratoSource</a>
-    </div>
-
-  </div>
+   </div>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
